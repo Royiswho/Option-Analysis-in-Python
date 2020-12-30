@@ -12,7 +12,7 @@
 
 * Packages
 
-<img src="media/image1.png" width = "400" align="center">
+<img src="media/image1.png" align="center">
 ---
 ### Part 1: Data Processing
 
@@ -25,7 +25,7 @@ on 9/6. Because it is hard to download all the data simultaneously, only
 close prices are obtained here. AMZN call data expired on September is
 attached as below:
 
-<img src="media/image2.png" width = "400" align="center">
+<img src="media/image2.png"  align="center">
 
 #### 2)  Yahoo Finance
 
@@ -41,7 +41,7 @@ save them in local.
 The second one is used to read data and modify them to a concise format
 based on symbol, type and expiration date.
 
-<img src="media/image5.png" width = "400" align="center">
+<img src="media/image5.png" align="center">
 
 ### 3. Description
 
