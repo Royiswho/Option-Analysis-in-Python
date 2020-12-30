@@ -192,7 +192,7 @@ reverse, which is like a smile.
 Secondly, the trend of SEP-expired lines is the same, crossing down the
 blue line then crossing up.
 
-### 10. Greeks
+### 10. Calculating Greeks using Black-Scholes and Approximation of Partial Derivatives
 
 #### 1) Delta
 
