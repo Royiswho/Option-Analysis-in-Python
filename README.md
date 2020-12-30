@@ -43,7 +43,7 @@ based on symbol, type and expiration date.
 
 <img src="media/image5.png" align="center">
 
-### 3. Description
+### 3. OPtion Data Description
 
 AMZN is the NASDAQ stock exchange symbol for Amazon. SPY is the
 abbreviation for the SPDR S&P 500. It is an exchange-traded fund (ETF)
@@ -70,17 +70,16 @@ there are 365 days in 1 year.
 
 ### Part 2: European Option Analysis
 
-### 5. BS Formulas
+### 5. Black-shores Formulas
 
 Two functions below are created for pricing European call and European
 put:
 
 <img src="media/image6.png" align="center">
 
-### 6. Bisection Method
+### 6. Computing Implied Volatility using Bisection Method
 
-The function below is created for Bisection Method. In the function, the
-tolerance level is set as $10^{- 6}$.
+<img src="https://latex.codecogs.com/gif.latex?10^{-6}" title="10^{-6}" />
 
 <img src="media/image7.png" align="center">
 
@@ -98,12 +97,9 @@ value are shown as below:
 The average value can be calculated as 0.2566. Then, with this method,
 we can compute all the volatility values and their average.
 
-### 7. Implied Volatility Table
+### 7. Comparing Call's and Put's Implied Volatilities
 
-All the volatility values are calculated through the same functions as
-above:
-
-<img src="media/image10.png" align="center">
+All the volatility values are calculated through the same functions.
 
 It is not necessary to show all the results, so I attach the result for
 AMZN with expiration in November and SPY with expiration in October.
@@ -115,6 +111,7 @@ AMZN with expiration in November and SPY with expiration in October.
 With all the volatility values above, a table for average volatilities
 can be obtained as below:
 
+<img src="media/image13.png" align="center">
 
 **Comment:** Compared with SPY, the volatilities for AMZN are much
 higher and it makes sense for the current market. As the maturity
@@ -123,24 +120,24 @@ From question 9, it is known that when the strike prices go up,
 volatility values are decreasing then increasing, like a smile. And this
 rule is followed by both put and call.
 
-### 8. Put-Call Parity
+### 8. Verifying Put-Call Parity
 
 With Put-Call Parity, I create a function to compute the theoretical
 price for an option.
 
-<img src="media/image13.png" align="center">
+<img src="media/image14.png" align="center">
 
 Then, I use the function to calculate the theoretical prices. For AMZN,
 I calculate the call price for options expired in 9/21. Then, I make a
 comparation with real prices. The results are shown:
 
-<img src="media/image14.png" align="center">
+<img src="media/image15.png" align="center">
 
 For SPY, I calculate the call price for options expired in 9/21 as well.
 Then, I make a comparation with real prices. The results are attached as
 below:
 
-<img src="media/image15.png" align="center">
+<img src="media/image16.png" align="center">
 
 **Comment:** From the two results, it can be found that the theoretical
 prices and real prices are quite close. Hence, the Put-Call Parity can
@@ -150,16 +147,16 @@ Firstly, the market is not totally efficient, so there are some
 opportunities for arbitrage. Secondly, Yahoo Finance gives data with
 delay. So, the times for the two prices don't definitely match.
 
-### 9. Implied Volatility versus Strike $\mathbf{K}$
+### 9. Volatility Smile
 
 Because only three maturities are considered here, so I show them all
 directly and the option expired in September is the one closest to
 maturity. The implied volatility values versus strike for AMZN Call,
 AMZN Put and SPY are shown as below:
 
-<img src="media/image16.png" align="center">
-
 <img src="media/image17.png" align="center">
+
+<img src="media/image18.png" align="center">
 
 **Comment:**
 
@@ -178,9 +175,9 @@ maturity. However, for SPY, the rule is followed only by options expired
 in October and November. The September-expired options show abnormally
 high volatility values.
 
-<img src="media/image18.png" align="center">
-
 <img src="media/image19.png" align="center">
+
+<img src="media/image20.png" align="center">
 
 **Comment: Call versus Put**
 
@@ -195,37 +192,37 @@ blue line then crossing up.
 
 ### 10. Greeks
 
-#### 1)  Delta
+#### 1) Delta
 
 The data applied here is SPY call options expired in September. The
 code and result for two methods are shown as below:
 
-<img src="media/image20.png" align="center">
-
 <img src="media/image21.png" align="center">
+
+<img src="media/image22.png" align="center">
 
 **Comment:** From the table, it is known that two lists are almost the
 same. Hence, the two methods are equivalent as well.
 
-#### 2)  Vega
+#### 2) Vega
 
 The same data is applied here. The code and result are attached as
 below:
 
-<img src="media/image22.png" align="center">
-
 <img src="media/image23.png" align="center">
+
+<img src="media/image24.png" align="center">
 
 **Comment:** The two lists are quite close, indicating that the two
 methods are equivalent as well.
 
-#### 3)  Gamma
+#### 3) Gamma
 
 *  The same data is used here as well. The code and result are attached:
 
-<img src="media/image24.png" align="center">
-
 <img src="media/image25.png" align="center">
+
+<img src="media/image26.png" align="center">
 
 **Comment:** The two lists are quite close, showing that the two methods
 are equivalent as well.
