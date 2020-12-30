@@ -34,9 +34,9 @@ For data retrieval and pre-processing, I created two functions.
 The first one is used to download option data of multiple assets and
 save them in local.
 
-<img src="media/image3.png" width = "400" align="center">
+<img src="media/image3.png" align="center">
 
-<img src="media/image4.png" width = "400" align="center">
+<img src="media/image4.png" align="center">
 
 The second one is used to read data and modify them to a concise format
 based on symbol, type and expiration date.
@@ -63,7 +63,7 @@ DATA1 is downloaded at 3:28 PM on 9/4 and DATA2 is downloaded at 9:40 AM
 on 9/5. The underlying prices and short-term interest rate are shown in
 the chart below:
 
-<img src="media/image27.png" width = "400" align="center">
+<img src="media/image27.png" align="center">
 
 The time to maturity is calculated based on year. In this assignment,
 there are 365 days in 1 year.
@@ -75,25 +75,25 @@ there are 365 days in 1 year.
 Two functions below are created for pricing European call and European
 put:
 
-<img src="media/image6.png" width = "400" align="center">
+<img src="media/image6.png" align="center">
 
 ### 6. Bisection Method
 
 The function below is created for Bisection Method. In the function, the
 tolerance level is set as $10^{- 6}$.
 
-<img src="media/image7.png" width = "400" align="center">
+<img src="media/image7.png" align="center">
 
 With the pricing functions and Bisection method above, I create a
 function to calculate all the implied volatilities based on different
 strike prices and bid and ask prices.
 
-<img src="media/image8.png" width = "400" align="center">
+<img src="media/image8.png" align="center">
 
 The implied volatilities for AMZN put expired on 9/21 and the average
 value are shown as below:
 
-<img src="media/image9.png" width = "400" align="center">
+<img src="media/image9.png" align="center">
 
 The average value can be calculated as 0.2566. Then, with this method,
 we can compute all the volatility values and their average.
@@ -103,14 +103,14 @@ we can compute all the volatility values and their average.
 All the volatility values are calculated through the same functions as
 above:
 
-<img src="media/image10.png" width = "400" align="center">
+<img src="media/image10.png" align="center">
 
 It is not necessary to show all the results, so I attach the result for
 AMZN with expiration in November and SPY with expiration in October.
 
-<img src="media/image11.png" width = "400" align="center">
+<img src="media/image11.png" align="center">
 
-<img src="media/image12.png" width = "400" align="center">
+<img src="media/image12.png" align="center">
 
 With all the volatility values above, a table for average volatilities
 can be obtained as below:
@@ -128,19 +128,19 @@ rule is followed by both put and call.
 With Put-Call Parity, I create a function to compute the theoretical
 price for an option.
 
-<img src="media/image13.png" width = "400" align="center">
+<img src="media/image13.png" align="center">
 
 Then, I use the function to calculate the theoretical prices. For AMZN,
 I calculate the call price for options expired in 9/21. Then, I make a
 comparation with real prices. The results are shown:
 
-<img src="media/image14.png" width = "400" align="center">
+<img src="media/image14.png" align="center">
 
 For SPY, I calculate the call price for options expired in 9/21 as well.
 Then, I make a comparation with real prices. The results are attached as
 below:
 
-<img src="media/image15.png" width = "400" align="center">
+<img src="media/image15.png" align="center">
 
 **Comment:** From the two results, it can be found that the theoretical
 prices and real prices are quite close. Hence, the Put-Call Parity can
@@ -157,9 +157,9 @@ directly and the option expired in September is the one closest to
 maturity. The implied volatility values versus strike for AMZN Call,
 AMZN Put and SPY are shown as below:
 
-<img src="media/image16.png" width = "400" align="center">
+<img src="media/image16.png" align="center">
 
-<img src="media/image17.png" width = "400" align="center">
+<img src="media/image17.png" align="center">
 
 **Comment:**
 
@@ -178,9 +178,9 @@ maturity. However, for SPY, the rule is followed only by options expired
 in October and November. The September-expired options show abnormally
 high volatility values.
 
-<img src="media/image18.png" width = "400" align="center">
+<img src="media/image18.png" align="center">
 
-<img src="media/image19.png" width = "400" align="center">
+<img src="media/image19.png" align="center">
 
 **Comment: Call versus Put**
 
@@ -200,9 +200,9 @@ blue line then crossing up.
 The data applied here is SPY call options expired in September. The
 code and result for two methods are shown as below:
 
-<img src="media/image20.png" width = "400" align="center">
+<img src="media/image20.png" align="center">
 
-<img src="media/image21.png" width = "400" align="center">
+<img src="media/image21.png" align="center">
 
 **Comment:** From the table, it is known that two lists are almost the
 same. Hence, the two methods are equivalent as well.
@@ -212,9 +212,9 @@ same. Hence, the two methods are equivalent as well.
 The same data is applied here. The code and result are attached as
 below:
 
-<img src="media/image22.png" width = "400" align="center">
+<img src="media/image22.png" align="center">
 
-<img src="media/image23.png" width = "400" align="center">
+<img src="media/image23.png" align="center">
 
 **Comment:** The two lists are quite close, indicating that the two
 methods are equivalent as well.
@@ -223,9 +223,9 @@ methods are equivalent as well.
 
 *  The same data is used here as well. The code and result are attached:
 
-<img src="media/image24.png" width = "400" align="center">
+<img src="media/image24.png" align="center">
 
-<img src="media/image25.png" width = "400" align="center">
+<img src="media/image25.png" align="center">
 
 **Comment:** The two lists are quite close, showing that the two methods
 are equivalent as well.
