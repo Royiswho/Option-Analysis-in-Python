@@ -13,7 +13,9 @@
 * Packages
 
 <img src="media/image1.png" align="center">
+
 ---
+
 ### Part 1: Data Processing
 
 ### 2. Data from Yahoo and Bloomberg
@@ -43,7 +45,7 @@ based on symbol, type and expiration date.
 
 <img src="media/image5.png" align="center">
 
-### 3. OPtion Data Description
+### 3. Option Data Description
 
 AMZN is the NASDAQ stock exchange symbol for Amazon. SPY is the
 abbreviation for the SPDR S&P 500. It is an exchange-traded fund (ETF)
@@ -68,9 +70,11 @@ the chart below:
 The time to maturity is calculated based on year. In this assignment,
 there are 365 days in 1 year.
 
+---
+
 ### Part 2: European Option Analysis
 
-### 5. Black-shores Formulas
+### 5. Black-Scholes Formulas
 
 Two functions below are created for pricing European call and European
 put:
@@ -78,8 +82,6 @@ put:
 <img src="media/image6.png" align="center">
 
 ### 6. Computing Implied Volatility using Bisection Method
-
-<img src="https://latex.codecogs.com/gif.latex?10^{-6}" title="10^{-6}" />
 
 <img src="media/image7.png" align="center">
 
