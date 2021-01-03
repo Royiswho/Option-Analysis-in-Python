@@ -22,8 +22,8 @@
 
 #### 1)  Bloomberg
 
-DATA1 is downloaded at 4:00 PM on 9/5 and DATA2 is downloaded at 4:00 PM
-on 9/6. Because it is hard to download all the data simultaneously, only
+DATA1 is downloaded at 4:00 PM on 9/5/18 and DATA2 is downloaded at 4:00 PM
+on 9/6/18. Because it is hard to download all the data simultaneously, only
 close prices are obtained here. AMZN call data expired on September is
 attached as below:
 
